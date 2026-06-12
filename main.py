@@ -1,10 +1,10 @@
 import requests
 from bottle import abort, redirect, request, response, route, run, template
 
-CLIENT_ID = ""  # Your Spotify Client ID
-CLIENT_SECRET = ""  # Your Spotify Client Secret
+CLIENT_ID = ""f97b47e353ca49bfac7b21bd63db1b06
+CLIENT_SECRET = ""b91f8408af14434a9ef72a2a4320a125
 SCOPE = "user-library-read user-library-modify playlist-read-private playlist-modify-private playlist-modify-public"
-REDIRECT_URI = "http://localhost:8080/callback"
+REDIRECT_URI = "http://127.0.0.1:8080/callback"
 BASE_URL = "https://api.spotify.com/v1"
 
 RESPONSE_ITEMS_LIMIT = 50  # Number of items to fetch per request. MIN: 0, MAX: 50
